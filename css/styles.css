@@ -259,8 +259,14 @@ body {
   font-weight: 700;
   color: #242942;
   font-size: 2.25rem;
-  text-transform: uppercase;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.main .main-body h2 {
+  color: #5b5f71;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+  width: 90%;
 }
 
 /*# sourceMappingURL=styles.css.map */
