@@ -118,7 +118,7 @@ body {
     display: flex;
     font-size: 0.8rem;
     letter-spacing: 5px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     .pill {
       @include font_barlow(700);
@@ -129,6 +129,16 @@ body {
       letter-spacing: 1px;
       margin-right: 1rem;
       padding: 5px 10px;
+    }
+  }
+
+  .main-body {
+    h1 {
+      @include font_barlow(700);
+      color: $veryDarkBlue;
+      font-size: 2.25rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
     }
   }
 }
