@@ -142,4 +142,32 @@ html {
   font-weight: 400;
 }
 
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.grey-square {
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-position: top 30px right 195.3px;
+  background: #eef3f6;
+  border-radius: 4rem;
+  height: 500px;
+  left: 50%;
+  position: fixed;
+  top: -75px;
+  width: 75vw;
+  z-index: -100;
+}
+
+.illustration {
+  top: 6.675rem;
+  width: 100%;
+  z-index: -100;
+}
+.illustration img {
+  width: 138%;
+}
+
 /*# sourceMappingURL=styles.css.map */
