@@ -108,7 +108,14 @@ body {
 
 .main {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+
+  .main-header,
+  .main-body,
+  .main-footer {
+    width: 80%;
+    margin: 0 auto;
+  }
 
   .main-header {
     @include font_barlow(400);

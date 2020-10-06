@@ -230,7 +230,13 @@ body {
 
 .main {
   margin: 0 auto;
+  width: 100%;
+}
+.main .main-header,
+.main .main-body,
+.main .main-footer {
   width: 80%;
+  margin: 0 auto;
 }
 .main .main-header {
   font-family: "Barlow Condensed", sans-serif;
