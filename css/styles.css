@@ -217,6 +217,7 @@ body {
   letter-spacing: 1px;
 }
 .top-bar nav.open ul li {
+  cursor: pointer;
   margin: 30px 0;
 }
 .top-bar nav.open ul li:last-child {

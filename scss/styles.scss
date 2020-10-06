@@ -91,6 +91,7 @@ body {
         color: $veryDarkBlue;
         letter-spacing: 1px;
         li {
+          cursor: pointer;
           margin: 30px 0;
           &:last-child {
             border-top: 1px solid $grayishBlue;
