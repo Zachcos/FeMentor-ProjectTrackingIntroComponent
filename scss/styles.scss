@@ -40,9 +40,8 @@ body {
 
 .illustration {
   margin-bottom: 4rem;
-  top: 6.675rem;
   width: 100%;
-  z-index: -100;
+  overflow: hidden;
   img {
     width: 138%;
   }
