@@ -143,8 +143,29 @@ body {
     h2 {
       color: $darkGrayishBlue;
       line-height: 1.3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
       width: 90%;
+    }
+  }
+
+  .main-footer {
+    @include font_barlow(400);
+    color: $grayishBlue;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    button {
+      @include font_barlow(700);
+      background: $red;
+      border-radius: 6px;
+      border: none;
+      color: $lightGrayishBlue;
+      cursor: pointer;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      margin-right: 1rem;
+      padding: 0.65rem 1.1rem;
+      text-transform: uppercase;
     }
   }
 }

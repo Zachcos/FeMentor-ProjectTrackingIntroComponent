@@ -265,8 +265,30 @@ body {
 .main .main-body h2 {
   color: #5b5f71;
   line-height: 1.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   width: 90%;
+}
+.main .main-footer {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  color: #a0a1ac;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.main .main-footer button {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  background: #ff5c5c;
+  border-radius: 6px;
+  border: none;
+  color: #eef3f6;
+  cursor: pointer;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin-right: 1rem;
+  padding: 0.65rem 1.1rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */
