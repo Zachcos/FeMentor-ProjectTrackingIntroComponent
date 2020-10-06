@@ -138,6 +138,7 @@ table {
 /* Start variables and mixins */
 /* End variables and mixins */
 html {
+  font-family: "Barlow", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -184,6 +185,7 @@ body {
 }
 .top-bar .nav-btn {
   background: url("../images/icon-hamburger.svg") no-repeat;
+  cursor: pointer;
   height: 25px;
   width: 30px;
 }
@@ -192,8 +194,37 @@ body {
 }
 .top-bar nav {
   display: none;
-  height: 0;
-  width: 0;
+}
+.top-bar nav.open {
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.2);
+  display: block;
+  left: 0;
+  margin: 0 10%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 100px;
+  width: 80%;
+}
+.top-bar nav.open ul {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  color: #242942;
+  letter-spacing: 1px;
+}
+.top-bar nav.open ul li {
+  margin: 30px 0;
+}
+.top-bar nav.open ul li:last-child {
+  border-top: 1px solid #a0a1ac;
+  color: #a0a1ac;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
