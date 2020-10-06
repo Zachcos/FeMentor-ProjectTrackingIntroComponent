@@ -162,15 +162,6 @@ body {
   z-index: -100;
 }
 
-.illustration {
-  margin-bottom: 4rem;
-  width: 100%;
-  overflow: hidden;
-}
-.illustration img {
-  width: 138%;
-}
-
 .top-bar {
   align-items: center;
   display: flex;
@@ -206,39 +197,50 @@ body {
   margin: 0 10%;
   position: absolute;
   text-align: center;
-  text-transform: uppercase;
   top: 100px;
   width: 80%;
 }
-.top-bar nav.open ul {
+.top-bar nav ul {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   color: #242942;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
-.top-bar nav.open ul li {
+.top-bar nav ul li {
   cursor: pointer;
   margin: 30px 0;
 }
-.top-bar nav.open ul li:last-child {
+.top-bar nav ul li:last-child {
   border-top: 1px solid #a0a1ac;
   color: #a0a1ac;
   margin: 0 auto;
   padding: 1.5rem 0;
   width: 80%;
 }
+.top-bar nav ul li.bullet {
+  display: none;
+}
 
-.main {
+.main-wrapper {
   margin: 0 auto;
   width: 100%;
 }
-.main .main-header,
-.main .main-body,
-.main .main-footer {
+.main-wrapper .main-header,
+.main-wrapper .main-body,
+.main-wrapper .main-footer {
   width: 80%;
   margin: 0 auto;
 }
-.main .main-header {
+.main-wrapper .illustration {
+  margin-bottom: 4rem;
+  width: 100%;
+  overflow: hidden;
+}
+.main-wrapper .illustration img {
+  width: 138%;
+}
+.main-wrapper .main-header {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   align-items: center;
@@ -249,7 +251,7 @@ body {
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
-.main .main-header .pill {
+.main-wrapper .main-header .pill {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   background: #242942;
@@ -260,7 +262,7 @@ body {
   margin-right: 1rem;
   padding: 5px 10px;
 }
-.main .main-body h1 {
+.main-wrapper .main-body h1 {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   color: #242942;
@@ -268,13 +270,13 @@ body {
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
-.main .main-body h2 {
-  color: #5b5f71;
+.main-wrapper .main-body h2 {
+  color: #a0a1ac;
   line-height: 1.3rem;
   margin-bottom: 1.25rem;
   width: 90%;
 }
-.main .main-footer {
+.main-wrapper .main-footer {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   color: #a0a1ac;
@@ -282,7 +284,7 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.main .main-footer button {
+.main-wrapper .main-footer button {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   background: #ff5c5c;
@@ -295,6 +297,76 @@ body {
   margin-right: 1rem;
   padding: 0.65rem 1.1rem;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1025px) {
+  .top-bar {
+    padding: 4rem 9rem 6rem;
+  }
+  .top-bar img.logo {
+    width: 35px;
+    height: 35px;
+  }
+  .top-bar .nav-btn {
+    display: none;
+  }
+  .top-bar nav {
+    display: block;
+    min-width: 35%;
+  }
+  .top-bar nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+  .top-bar nav ul li {
+    margin: 0;
+  }
+  .top-bar nav ul li:last-child {
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    position: relative;
+  }
+  .top-bar nav ul li.bullet {
+    display: block;
+    color: #a0a1ac;
+  }
+
+  .main-wrapper {
+    display: flex;
+  }
+  .main-wrapper .illustration {
+    order: 2;
+    position: fixed;
+    right: -57%;
+  }
+  .main-wrapper .illustration img {
+    max-width: 850px;
+  }
+  .main-wrapper .main {
+    order: 1;
+    padding: 2rem 0 0 0;
+    margin-left: 6%;
+  }
+  .main-wrapper .main .main-body h1 {
+    font-size: 3.5rem;
+    width: 80%;
+    margin-bottom: 1.5rem;
+  }
+  .main-wrapper .main .main-body h2 {
+    width: 40%;
+    margin-bottom: 2.5rem;
+  }
+  .main-wrapper .main .main-footer {
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+  }
+  .main-wrapper .main .main-footer button {
+    font-size: 0.9rem;
+    padding: 0.85rem 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
