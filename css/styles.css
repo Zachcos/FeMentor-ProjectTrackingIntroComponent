@@ -135,4 +135,10 @@ table {
   box-sizing: border-box;
 }
 
+/* Start variables and mixins */
+/* End variables and mixins */
+html {
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=styles.css.map */
