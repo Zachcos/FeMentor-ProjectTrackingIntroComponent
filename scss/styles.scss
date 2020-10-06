@@ -39,6 +39,7 @@ body {
 }
 
 .illustration {
+  margin-bottom: 4rem;
   top: 6.675rem;
   width: 100%;
   z-index: -100;
@@ -102,6 +103,32 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+.main {
+  margin: 0 auto;
+  width: 80%;
+
+  .main-header {
+    @include font_barlow(400);
+    align-items: center;
+    color: $grayishBlue;
+    display: flex;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    .pill {
+      @include font_barlow(700);
+      background: $veryDarkBlue;
+      border-radius: 12px;
+      color: $lightGrayishBlue;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      margin-right: 1rem;
+      padding: 5px 10px;
     }
   }
 }

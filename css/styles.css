@@ -163,6 +163,7 @@ body {
 }
 
 .illustration {
+  margin-bottom: 4rem;
   top: 6.675rem;
   width: 100%;
   z-index: -100;
@@ -226,6 +227,33 @@ body {
   margin: 0 auto;
   padding: 1.5rem 0;
   width: 80%;
+}
+
+.main {
+  margin: 0 auto;
+  width: 80%;
+}
+.main .main-header {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  align-items: center;
+  color: #a0a1ac;
+  display: flex;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.main .main-header .pill {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  background: #242942;
+  border-radius: 12px;
+  color: #eef3f6;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+  padding: 5px 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
