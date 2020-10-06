@@ -170,4 +170,30 @@ body {
   width: 138%;
 }
 
+.top-bar {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-bottom: 1.5rem;
+}
+.top-bar img.logo {
+  height: 25px;
+  width: 25px;
+}
+.top-bar .nav-btn {
+  background: url("../images/icon-hamburger.svg") no-repeat;
+  height: 25px;
+  width: 30px;
+}
+.top-bar .nav-btn.open {
+  background: url("../images/icon-close.svg") no-repeat;
+}
+.top-bar nav {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
